@@ -34,7 +34,7 @@ export default function Login({navigation}) {
           routes:[{name:"Principal"}]
         }
         )}
-      else if(status == 0){                 //Se status
+      else if(status == 0){                 //Se status = 0 apresenta msg de erro do retorno da api 
         setErroLogin(json.statusMessage)
         return false
       }  
