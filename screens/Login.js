@@ -14,7 +14,7 @@ export default function Login({navigation}) {
      
     let strBody = '{ "serviceName": "MobileLoginSP.login", "requestBody": { "NOMUSU": { "$": "'+Login+'" }, "INTERNO":{ "$": "'+password+'" }, "KEEPCONNECTED": { "$": "S" } } }';  //Corpo da requisição HTTP
 
-    const url = 'http://192.168.100.5:8180/mge/service.sbr?serviceName=MobileLoginSP.login&outputType=json';  // URL JSON
+    const url = 'ipserver/mge/service.sbr?serviceName=MobileLoginSP.login&outputType=json';  // URL JSON
     const options = {
       method: 'POST',
       qs: {serviceName: 'MobileLoginSP.login', outputType: 'json'},
